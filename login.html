@@ -12,42 +12,40 @@
 
 </head>
 
-<body>
-
-   <!-- navbar -->
-</header>
+</head id="header">
+<!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <img id="logo" src="./img/LOGO-removebg-preview.png"
               alt="">
-    <a class="navbar-brand" href="#">GAMEBAR</a>
+    <a class="navbar-brand" href="./index.html">GAMEBAR</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">INICIAR SESION
+          <a class="nav-link active" href="./login.html">INICIAR SESION
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">QUIENES SOMOS</a>
+          <a class="nav-link" href="./quienes somos.html">QUIENES SOMOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACTANOS</a>
+          <a class="nav-link" href="./misjuegos.html">MIS JUEGOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CHAT DE AYUDA</a>
+          <a class="nav-link" href="./help.html">AYUDA</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="./login.html">Action</a>
+            <a class="dropdown-item" href="quienes somos.html">Another action</a>
+            <a class="dropdown-item" href="./misjuegos.html">Something else here</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+            <a class="dropdown-item" href="./help.html">Separated link</a>
           </div>
         </li>
       </ul>
@@ -56,6 +54,10 @@
 </nav>
 </header>
       <!-- fin navbar -->
+      
+    
+    
+  </head>
       <div class="list-group">
         <section >
             <div >
@@ -91,15 +93,16 @@
     
                                             <div class="d-flex align-items-center justify-content-center pb-4">
     
-                                                <button type="button" class="btn btn-outline-danger">iniciar sesión</button>
-                                                <a class="text-muted" href="#!">Olvidaste tu contraseña?</a>
+                                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                                                data-bs-target="#ModalFormulario">iniciar sesión</button>
+                                                <a class="text-muted" href="./recuperarcontra.html">Olvidaste tu contraseña?</a>
                                             </div>
     
                                             <div class="d-flex align-items-center justify-content-center pb-4">
                                                 <p class="mb-0 me-2">
                                                     ¿No tienes una cuenta?</p>
-                                                <button type="button" class="btn btn-outline-danger">registrate
-                                                    ahora</button>
+                                                <a href="./register.html"><button type="button" class="btn btn-outline-danger">registrate
+                                                    ahora</button></a>
                                             </div>
                                         </form>
     
@@ -128,18 +131,42 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-12 col-lg">
-          <a href="#">Home</a>
+          <a href="./">Home</a>
         </div>
         <div class="col-12 col-lg">
-          <a href="#">Foro</a>
+          <a href="./">Foro</a>
         </div>
         <div class="col-12 col-lg">
-          <a href="#">Redes</a>
+          <a href="./">MIS JUEGOS</a>
         </div>
         </div>
     </div>
   </footer>
    <!-- termina footer  -->
+   <!-- incia modal -->
+ <div class="modal" id="ModalFormulario">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Has iniciado Sesion en GAME BAR</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bienvenido</p>
+      </div>
+      <div class="modal-footer">
+       <a href="./index.html"> <button type="button" class="btn btn-primary">Quedarme como invitado</button></a>
+       <a href="./foro.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entrar a GAMEBAR</button></a> 
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- termina modal -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
 integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
